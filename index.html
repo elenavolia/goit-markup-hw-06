@@ -61,9 +61,61 @@
         <button class="main-button" type="button" data-modal-open>
           Заказать услугу
         </button>
+
         <div class="backdrop is-hidden" data-modal>
-          <div class="modal"><button data-modal-close></button></div>
+<div class="modal">
+  <b>Оставьте свои данные, мы вам перезвоним</b>
+  <form action="#" class="general-form">
+    <div class="name-form">
+      <label for="name">Имя</label>
+      <div class="input-block">
+        <input class="data" id="name" type="text" name="name" />
+        <svg class="icon-input" width="18px" height="18px">
+          <use href="./images/symbol-defs.svg#icon-person-black-18dp-1"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="name-form">
+      <label for="tel">Телефон</label>
+      <div class="input-block">
+        <input class="data" id="tel" type="tel" name="tel" />
+        <svg class="icon-input" width="18px" height="18px">
+          <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="name-form">
+      <label for="email">Почта</label>
+      <div class="input-block">
+        <input class="data" id="email" type="email" name="email" />
+        <svg class="icon-input" width="18px" height="18px">
+          <use href="./images/symbol-defs.svg#icon-email-black-18dp-1"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="name-form">
+      <label for="commit">Комментарий</label>
+      <textarea class="data area" name="comment" rows="7" placeholder="Оставьте комментарий" id="commit"></textarea>
+    </div>
+    <div class="form-item">
+      <div class="checkbox">
+        <label class="checkbox-label">
+          <input type="checkbox" name="toc" value="toc" class="checkbox-input" checked />
+          <span class="checkbox-custom-box"></span>
+          <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span>
+        </label>
+      </div>
+    </div>
+    <button class="form-btn">Отправить</button>
+  </form>
+  <button class="exit-btn" data-modal-close>
+    <svg class="icon" width="18px" height="18px">
+      <use href="./images/symbol-defs.svg#icon-close-black"></use>
+    </svg>
+  </button>
+</div>
         </div>
+
       </section>
       <section class="advantages">
         <h2>Наши преимущества</h2>
@@ -405,9 +457,18 @@
               </li>
             </ul>
           </div>
+          <div class="subscription">
+           <b>Подпишитесь на рассылку</b>
+            <form action="" class="input-sub">
+              <input type="email" name="email" placeholder="E-mail" class="email" />
+              <button type="submit" class="sub-button">Подписаться</button>
+            </form> 
+          </div>
+
         </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+  
   </body>
 </html>
