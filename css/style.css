@@ -206,6 +206,7 @@ header address a:active {
   display: flex;
   align-items: center;
   margin-right: 10px;
+  align-self: center;
 }
 /*main*/
 
@@ -445,12 +446,14 @@ h1 {
   display: inline-flex;
 }
 
+
 .checkbox-input:checked + .checkbox-custom-box {
   background-image: url(../images/sprite.svg#chek-icon);
   background-size: contain;
   cursor: pointer;
   background-repeat: no-repeat;
 }
+
 
 .checkbox-input:focus + .checkbox-custom-box {
   box-sizing: content-box;
