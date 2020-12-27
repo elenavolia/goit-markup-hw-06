@@ -320,7 +320,7 @@ h1 {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  background-color: var(--white-color);
+  background-color: var(--section-background-color);
 
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -328,11 +328,11 @@ h1 {
 
 .modal .exit-btn:hover,
 .modal .exit-btn:focus {
-  color: #2196f3;
+  color: var(--icons-contrast-color);
   cursor: pointer;
 }
 
-.exit-btn .icon {
+.exit-btn .icon-btn {
   margin: auto;
   fill: currentColor;
 }
@@ -370,7 +370,7 @@ h1 {
 
   letter-spacing: 0.01em;
 
-  color: #757575;
+  color: var(--minor-text-color)
 }
 
 .name-form .data {
@@ -383,12 +383,12 @@ h1 {
 }
 
 .data:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--selected-text-color);
   outline: none;
 }
 
 .data:focus + .icon-input {
-  fill: var(--accent-text-color);
+  fill: var(--selected-text-color);
 }
 
 .name-form .data.area {
@@ -423,7 +423,7 @@ h1 {
   line-height: 1.72;
   letter-spacing: 0.03em;
   border-radius: 4px;
-  color: var(--primari-text-color);
+  color: var(--minor-text-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -432,7 +432,7 @@ h1 {
   width: 16px;
   height: 15px;
   margin-right: 8px;
-  background-image: url(../images/icon-check-off.svg);
+  background-image: url(../images/sprite.svg#name-icon)
   fill: #212121;
   background-size: contain;
   background-repeat: no-repeat;
@@ -446,7 +446,7 @@ h1 {
 }
 
 .checkbox-input:checked + .checkbox-custom-box {
-  background-image: url(../images/icon-check-on.svg);
+  background-image: url(../images/sprite.svg#chek-icon);
   background-size: contain;
   cursor: pointer;
   background-repeat: no-repeat;
@@ -458,7 +458,7 @@ h1 {
 }
 
 .checkbox-label a {
-  color: var(--accent-text-color);
+  color: var(--icons-lines-color);
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
@@ -473,7 +473,7 @@ h1 {
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: var(--white-color);
+  color: var(--section-background-color);
   background: #2196f3;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -491,7 +491,7 @@ h1 {
   border-radius: 50%;
 
   background-color: var(--main-background-color);
-  background-image: url(../images/close-black.svg);
+  background-image: url(../images/sprite.svg#close-icon);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
