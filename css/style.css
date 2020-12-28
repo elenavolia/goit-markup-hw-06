@@ -440,6 +440,7 @@ h1 {
   border-radius: 4px;
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--icons-lines-color);
 }
 
 .checkbox-text {
@@ -448,10 +449,13 @@ h1 {
 
 
 .checkbox-input:checked + .checkbox-custom-box {
-  background-image: url(../images/sprite.svg#chek-icon);
+  background-image: url(../images/icons/chek-icon.svg);
   background-size: contain;
   cursor: pointer;
   background-repeat: no-repeat;
+  background-color: var(--icons-contrast-color);
+  border: 1px solid var(--icons-contrast-color);
+}
 }
 
 
