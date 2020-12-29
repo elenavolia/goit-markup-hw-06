@@ -192,13 +192,11 @@ header address a:active {
 }
 
 .mail {
-  width: 16px;
-  height: 12px;
+
   fill: currentColor;
 }
 .tel {
-  width: 10px;
-  height: 15px;
+
   fill: currentColor;
 }
 
@@ -348,6 +346,7 @@ h1 {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+  fill: #212121;
 }
 
 .general-form {
