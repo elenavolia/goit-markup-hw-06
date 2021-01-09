@@ -455,7 +455,7 @@ h1 {
   background-color: var(--icons-contrast-color);
   border: 1px solid var(--icons-contrast-color);
 }
-}
+
 
 
 .checkbox-input:focus + .checkbox-custom-box {
